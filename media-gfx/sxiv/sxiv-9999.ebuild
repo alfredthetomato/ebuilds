@@ -29,6 +29,10 @@ DEPEND="
 	x11-libs/libXft
 	)
 "
+src_prepare() {
+	sed -i 's/"Monospace:size=9"/"oxygenmono:size=8"/g' config.def.h
+}
+
 RDEPEND="${DEPEND}"
 
 src_install() {
