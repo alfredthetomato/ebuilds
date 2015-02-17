@@ -5,17 +5,26 @@ EAPI=5
 
 inherit git-r3
 
-DESCRIPTION="A lightweight xcb based bar without"
+DESCRIPTION="A lightweight xcb based bar by LemonBoy"
 HOMEPAGE="https://github.com/LemonBoy/bar"
-EGIT_REPO_URI="git://github.com/LemonBoy/bar.git"
+if use xft; then
+EGIT_REPO_URI="git://github.com/krypt-n/bar.git"
+EGIT_BRANCH="xft-port"
+fi
+use xft || EGIT_REPO_URI="git://github.com/LemonBoy/bar.git"
 
 LICENSE="MIT-with-advertising"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc"
-IUSE=""
+IUSE="xft"
 
 DEPEND="
-	x11-libs/libxcb"
+	x11-libs/libxcb
+	xft? (
+	x11-libs/libXft
+	x11-libs/libX11
+	)
+"
 RDEPEND="${DEPEND}"
 
 src_install() {
