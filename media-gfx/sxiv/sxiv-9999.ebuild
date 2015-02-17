@@ -32,5 +32,5 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_install() {
-	emake DESTDIR="${D}" INSTALL
+	emake DESTDIR="${D}" install
 }
