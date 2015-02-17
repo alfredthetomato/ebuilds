@@ -26,7 +26,7 @@ DEPEND="
 	x11-libs/libX11
 	x11-proto/xproto
 	xft? (
-	x11-libs/LibXft
+	x11-libs/libXft
 	)
 "
 RDEPEND="${DEPEND}"
