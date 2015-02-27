@@ -11,7 +11,7 @@ EGIT_REPO_URI="git://github.com/baskerville/sres.git"
 
 LICENSE="Unlicense"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="
