@@ -19,17 +19,10 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
-# hackey thing as simlinks cause racey behaviour
-src_prepare() {
-	rm "Breeze/actions/LO_icons_breeze/special folders/sfx2/imglst/actiontemplates018.svg"
-}
-
 src_install() {
-	insinto "/usr/share/icons"
-	mv "${S}/Breeze Dark" "${S}/Breeze-Dark" # the space causes unhappiness
-	# the hackey simlink thing continues
-	ln -s "${S}/Breeze/actions/LO_icons_breeze/special folders/sfx2/imglst/action{templates018,view025}.svg"
-	doins -r Br*
+	dodir "/usr/share/icons"
+	cp -R "${S}/Breeze" "${D}"
+	cp -R "${S}/Breeze Dark" "${D}"
 }
 
 # Gnomey cache stuff
