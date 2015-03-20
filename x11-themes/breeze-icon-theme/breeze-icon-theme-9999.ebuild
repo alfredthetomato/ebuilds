@@ -20,9 +20,9 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	dodir "/usr/share/icons"
-	cp -R "${S}/Breeze" "${D}"
-	cp -R "${S}/Breeze Dark" "${D}"
+	mkdir -p "${D}usr/share/icons"
+	cp -R "${S}/Breeze" "${D}usr/share/icons"
+	cp -R "${S}/Breeze Dark" "${D}usr/share/icons"
 }
 
 # Gnomey cache stuff
