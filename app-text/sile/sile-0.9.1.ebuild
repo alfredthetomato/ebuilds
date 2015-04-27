@@ -16,12 +16,12 @@ KEYWORDS="~amd64 ~ppc"
 IUSE=""
 
 DEPEND=">=dev-lang/lua-5.1
+		dev-lua/lgi
         dev-lua/lpeg
 		dev-lua/luaexpat
-		dev-lua/lgi
 		media-libs/harfbuzz
-		media-libs/freetype
-		media-libs/fontconfig"
+		media-libs/fontconfig
+		media-libs/freetype"
 RDEPEND="${DEPEND}"
 
 src_install() {
