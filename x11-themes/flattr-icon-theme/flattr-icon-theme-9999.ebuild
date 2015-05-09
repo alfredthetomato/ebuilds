@@ -20,8 +20,9 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto "/usr/share/icons"
-	doins -r *
+	dodir /usr/share/icons/
+	cp -r "${S}/Flattr" "${D}/usr/share/icons/"
+	cp -r "${S}/Flattr Dark" "${D}/usr/share/icons/"
 }
 
 # Gnomey cache stuff
