@@ -20,7 +20,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto "/usr/share/icons/Flattr"
+	insinto "/usr/share/icons"
 	doins -r *
 }
 
