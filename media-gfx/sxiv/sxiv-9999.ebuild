@@ -16,7 +16,7 @@ use xft || EGIT_REPO_URI="git://github.com/muennich/sxiv.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc"
-IUSE="xft"
+IUSE="cantarell mono xft"
 
 DEPEND="
 	sys-libs/glibc
@@ -30,7 +30,12 @@ DEPEND="
 	)
 "
 src_prepare() {
+	if use cantarell; then
+	sed -i 's/"Monospace:size=9"/"Cantarell:size=9"/g' config.def.h
+	fi
+	if use mono; then
 	sed -i 's/"Monospace:size=9"/"oxygenmono:size=8"/g' config.def.h
+	fi
 }
 
 RDEPEND="${DEPEND}"
