@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc"
 IUSE="unrounded"
 
-DEPEND=""
+DEPEND="dev-ruby/sass"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
