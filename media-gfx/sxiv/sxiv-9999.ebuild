@@ -34,7 +34,7 @@ src_prepare() {
 	sed -i 's/"Monospace:size=9"/"Cantarell:size=9"/g' config.def.h
 	fi
 	if use mono; then
-	sed -i 's/"Monospace:size=9"/"oxygenmono:size=8"/g' config.def.h
+	sed -i 's/"Monospace:size=9"/"Monoid:size=7"/g' config.def.h
 	fi
 }
 
