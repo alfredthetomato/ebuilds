@@ -12,7 +12,7 @@ EGIT_REPO_URI="git://github.com/enkore/j4-dmenu-desktop.git"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND=""
