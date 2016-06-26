@@ -11,8 +11,7 @@ HOMEPAGE="https://github.com/LemonBoy/bar"
 EGIT_REPO_URI="
 	xft? ( git://github.com/krypt-n/bar.git )
 	!xft? ( git://github.com/LemonBoy/bar.git )"
-EGIT_BRANCH="
-	xft? ( xft-port )"
+EGIT_BRANCH="xft-port"
 
 LICENSE="MIT-with-advertising"
 SLOT="0"
