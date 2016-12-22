@@ -3,6 +3,8 @@
 
 EAPI=6
 
+inherit cmake-utils
+
 DESCRIPTION="A rewrite of i3-dmenu-desktop, which is much faster"
 HOMEPAGE="https://github.com/enkore/j4-dmenu-desktop"
 SRC_URI="https://github.com/enkore/j4-dmenu-desktop/archive/r${PV}.tar.gz -> ${PN}-r${PV}.tar.gz"
