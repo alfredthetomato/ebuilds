@@ -5,7 +5,9 @@ EAPI=6
 
 DESCRIPTION="A rewrite of i3-dmenu-desktop, which is much faster"
 HOMEPAGE="https://github.com/enkore/j4-dmenu-desktop"
-SRC_URI="https://github.com/enkore/j4-dmenu-desktop/archive/r${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/enkore/j4-dmenu-desktop/archive/r${PV}.tar.gz -> ${PN}-r${PV}.tar.gz"
+
+S="${WORKDIR}/${PN}-r${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
