@@ -16,3 +16,5 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="x11-misc/dmenu"
+
+PATCHES=("${FILESDIR}/${PN}-2.15-correct-catch-version.patch")
